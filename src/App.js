@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyName />
+      <CourseName />
+      <CourseContent />
     </div>
   );
+}
+
+function MyName() {
+  return <h1>Приходько Іван</h1>;
+}
+
+function CourseName() {
+  return <h2>
+    Курс Web-програмування
+  </h2>
+}
+
+function CourseContent() {
+  return <ul><h3>Містить уроки з</h3><li>мови розмітки HTML</li><li>мови стилю CSS</li><li>мови програмування JS</li><li>бібліотеки React JS</li></ul>
 }
 
 export default App;
